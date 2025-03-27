@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes y Naturaleza</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #13d133;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .tabla {
+            width: 80%;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #23da42;
+            color: white;
+        }
+        th:hover {
+            background: #1c7fdb;
+            transition: background 0.3s;
+        }
+        tr:hover{
+        background-color: #1d93e76e;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Viajes y Naturaleza</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Destinos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="cards">
+        <div class="card">
+            <img src="https://i.natgeofe.com/k/1666baad-537b-419d-b868-e9c25ca8628d/MT-Glacier2_2x1.png" alt="Paisajes de Montaña">
+            <h3>Paisajes de Montaña</h3>
+            <p>Descubre la grandeza de las montañas, donde el aire puro y las vistas impresionantes te invitan a la aventura.</p>
+        </div>
+        <div class="card">
+            <img src="https://carboninstitute.org/wp-content/uploads/2019/11/carbon-institute-forests-header-1600x900.jpg" alt="Bosques Misteriosos">
+            <h3>Bosques Misteriosos</h3>
+            <p>Sumérgete en la magia de los bosques, camina entre árboles frondosos y respira el aire puro.</p>
+        </div>
+        <div class="card">
+            <img src="https://i0.wp.com/panamericanworld.com/wp-content/uploads/2023/07/mejores-playas-del-Caribe.jpg?resize=1080%2C675&ssl=1" alt="Costas Paradisíacas">
+            <h3>Costas Paradisíacas</h3>
+            <p>Déjate llevar por la brisa marina y el suave murmullo de las olas en playas de arena dorada y aguas cristalinas. </p>
+        </div>
+    </section>
+
+    <section class="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Destino</th>
+                    <th>País</th>
+                    <th>Dificultad</th>
+                    <th>Temporada Recomendada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Machu Picchu</td>
+                    <td>Perú</td>
+                    <td>Alta</td>
+                    <td>Mayo - Septiembre</td>
+                </tr>
+                <tr>
+                    <td>Glaciares de Patagonia</td>
+                    <td>Argentina</td>
+                    <td>Media</td>
+                    <td>Diciembre - Febrero</td>
+                </tr>
+                <tr>
+                    <td>Islas Galápagos</td>
+                    <td>Ecuador</td>
+                    <td>Baja</td>
+                    <td>Todo el año</td>
+                </tr>
+                <tr>
+                    <td>Torres del Paine</td>
+                    <td>Chile</td>
+                    <td>Alta</td>
+                    <td>Noviembre - Marzo</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
